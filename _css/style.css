@@ -1,0 +1,108 @@
+body{
+    background-image: url(../_imagens/fundo.jpg);
+    background-size:1500px;
+    background-repeat: no-repeat;
+}
+/* seleção do idioma */
+.select-idioms{
+    margin:20px;
+}
+select{
+    background-color:#141414;
+    padding:8px 10px;
+    color:white;
+    width:200px;
+    outline: none;
+    border:none;
+    
+}
+/* conteiner-login */
+.conteiner-login{
+    border-radius:10px;
+    padding:50px;
+    width:45%;
+    height:400px;
+    float:right;
+    position: relative;
+    margin-right:50px;
+    background-color: #141414;
+    border:5px solid transparent;
+    animation-name: bl;
+    /* em quanto tempo ele faz o a animação */
+    animation-duration:3s;
+    /* Quantas vezes ele faz a animação */
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+@keyframes bl{
+    0%{
+        border-top-color:green;
+    }
+    25%{
+        border-right-color:green;
+    }
+    50%{
+        border-bottom-color:green;
+    }
+    75%{
+        border-left-color:green;
+    }
+    100%{
+        border-top-color:transparent;    
+    }
+}
+label{
+    color:rgb(189, 186, 186);
+}
+input{
+    width:90%;
+    height:30px;
+    border-radius: 5px;
+    margin:10px 0px;
+    background-color: #000000;
+    padding:5px 10px;
+    outline: none;
+    border:none;
+    color:white;
+}
+input#checkbox{
+    width:15px;
+}
+.check-forget{
+    display: flex;
+}
+.check-forget p{
+    margin-left:10px;
+    margin-top:17px;
+    color: white;
+    font-size: 0.7em;
+}
+.check-forget a{
+    margin:15px 50px;
+}
+button{
+    margin:20px 0px;
+    padding:15px;
+    width:90%;
+    position:relative;
+    top:20px;
+    left:50%;
+    transform:translate(-50%);
+    background-color: rgb(19, 85, 42);
+    font-size:1.0em;
+    color:white;
+    outline:none;
+    border:none;
+    cursor:pointer;
+}
+.new-user p{
+    text-align: center;
+    color: white;
+    font-size:1.0em;
+    position: relative;
+    top:20px;
+}
+a{
+    color: rgb(196, 196, 196);
+    font-weight: bold;
+}
