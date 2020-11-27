@@ -34,6 +34,7 @@ select{
     animation-iteration-count: infinite;
     animation-timing-function: ease-in-out;
 }
+/* bl = borda - area login */
 @keyframes bl{
     0%{
         border-top-color:green;
@@ -48,17 +49,19 @@ select{
         border-left-color:green;
     }
     100%{
-        border-top-color:transparent;    
+        border-top-color:green;    
     }
 }
 label{
     color:rgb(189, 186, 186);
+    margin-left:15px;
 }
 input{
     width:90%;
     height:30px;
     border-radius: 5px;
     margin:10px 0px;
+    margin-left:10px;
     background-color: #000000;
     padding:5px 10px;
     outline: none;
@@ -66,24 +69,30 @@ input{
     color:white;
 }
 input#checkbox{
+    position:relative;
+    left:20px;
     width:15px;
 }
 .check-forget{
     display: flex;
+    justify-content:center;
 }
 .check-forget p{
-    margin-left:10px;
-    margin-top:17px;
+    position: relative;
+    left:30px;
+    top:4px;
+    text-align:center;
     color: white;
-    font-size: 0.7em;
+    font-size: 0.9em;
 }
 .check-forget a{
+    text-align:center;
     margin:15px 50px;
 }
 button{
     margin:20px 0px;
     padding:15px;
-    width:90%;
+    width:100%;
     position:relative;
     top:20px;
     left:50%;
